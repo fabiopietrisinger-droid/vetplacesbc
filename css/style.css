@@ -277,7 +277,7 @@ ul { list-style: none; }
 .hero {
   position: relative;
   width: 100%;
-  height: 340px;
+  height: 45vh;
   overflow: hidden;
   background: #ddd;
 }
@@ -442,7 +442,7 @@ ul { list-style: none; }
 .hero-banner {
   position: relative;
   background: var(--orange);
-  height: 240px;
+  height: 45vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -736,29 +736,28 @@ ul { list-style: none; }
 }
 
 .footer-top {
-  padding: 56px 0 40px;
+  padding: 56px 0 20px;
   position: relative;
   z-index: 2;
 }
 
-.footer-logo {
+.footer-col-logo {
   text-align: center;
-  margin-bottom: 32px;
 }
 
-.footer-logo img { margin: 0 auto; height: 60px; }
+.footer-col-logo img { margin: 0 auto; height: 60px; }
 
 .footer-columns {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  text-align: center;
+  text-align: left;
 }
 
 .footer-col h4 {
   font-family: var(--font-heading);
   color: var(--purple);
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -778,21 +777,29 @@ ul { list-style: none; }
 }
 
 .footer-contact-item {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .footer-contact-item i {
   color: var(--purple);
-  font-size: 20px;
-  margin-bottom: 8px;
+  font-size: 28px;
+  flex-shrink: 0;
 }
 
 .footer-contact-item div { font-size: 14px; }
-.footer-contact-item .main-line { font-size: 16px; font-weight: 500; color: #2c2c2c; }
-.footer-contact-item .sub-line { color: var(--text-light); font-size: 12px; }
+.footer-contact-item .main-line { font-size: 18px; font-weight: 500; color: #2c2c2c; }
+.footer-contact-item .sub-line { color: var(--text-light); font-size: 14px; }
 
 .footer-social {
   display: flex;
@@ -815,7 +822,8 @@ ul { list-style: none; }
 
 .footer-bg-photo {
   width: 100%;
-  height: 240px;
+  height: 600px;
+  margin-top: 32px;
   background-color: transparent;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -823,18 +831,6 @@ ul { list-style: none; }
   background-size: auto;
   position: relative;
   z-index: 1;
-}
-
-.footer-bg-photo::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 90px;
-  background: linear-gradient(to bottom, var(--white) 0%, rgba(255,255,255,0) 100%);
-  z-index: 2;
-  pointer-events: none;
 }
 
 .footer-bottom {
@@ -882,38 +878,45 @@ ul { list-style: none; }
   .main-nav { display: block; }
   .social-icons { display: flex; }
 
-  .hero { height: 520px; }
-
   .section-title { font-size: 36px; }
 
   .footer-columns {
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     text-align: left;
-    max-width: 900px;
+    max-width: 1092px;
     margin: 0 auto;
+    gap: 24px;
   }
+
+  .footer-col-logo {
+    flex: 0 0 200px;
+    text-align: left;
+  }
+
+  .footer-col-logo img { margin: 0; }
 
   .footer-col { flex: 1; }
-  .footer-nav a, .footer-social, .footer-contact-item { justify-content: flex-start; }
+  .footer-nav a, .footer-contact-item { justify-content: flex-start; }
   .footer-social { justify-content: flex-start; }
 
+  .footer-col h4 { font-size: 18px; }
+
   .footer-contact-item {
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
+    justify-content: flex-start;
   }
 
-  .footer-contact-item i { margin-bottom: 0; }
+  .contact-link { gap: 12px; }
+
+  .footer-contact-item i { font-size: 20px; }
+  .footer-contact-item .main-line { font-size: 16px; }
+  .footer-contact-item .sub-line { font-size: 12px; }
 
   .footer-bg-photo {
-    height: 320px;
+    margin-top: 56px;
     background-position: bottom center;
-    background-size: auto;
-  }
-
-  .footer-bg-photo::before {
-    height: 130px;
+    background-size: cover;
   }
 
   .services-grid {
@@ -934,7 +937,6 @@ ul { list-style: none; }
     font-size: 17px;
   }
 
-  .hero-banner { height: 320px; }
   .hero-banner-text { font-size: 28px; max-width: 45%; padding-left: 60px; }
 
   .gallery-row, .estrutura-gallery {
@@ -947,4 +949,14 @@ ul { list-style: none; }
   .estrutura-gallery img { width: 160px; height: 120px; }
 
   .team-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ============================================
+   Wide desktop breakpoint (1340px+)
+   ============================================ */
+@media (min-width: 1340px) {
+  .hero,
+  .hero-banner {
+    height: 65vh;
+  }
 }

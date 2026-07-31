@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Links Vetplace | Vetplace SBC</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Clinica Veterinária em São Bernardo do Campo. Dentista Veterinário, Dermatologia Veterinária, Cirurgia Veterinária, Anestesia. Instalações confortáveis, centro cirúrgico com aparelhos de última geração para maior segurança do seu pet, anestesia inalatória, sala de esterilização de materiais, sala de recuperação com vista para o centro cirúrgico para que seu pet seja vigiado a todo momento.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vetplace SBC">
+<meta property="og:title" content="Links Vetplace | Vetplace SBC">
+<meta property="og:image" content="https://vetplacesbc.com.br/images/logo_2024-1.jpg">
+<meta property="og:url" content="https://vetplacesbc.com.br/links-vetplace/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/jpeg" href="images/icon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  :root {
+    --purple: #A94A9E;
+    --purple-dark: #8A3B80;
+    --purple-darker: #2B1330;
+    --teal: #29C2B3;
+    --whatsapp: #25D366;
+    --white: #FFFFFF;
+    --text-light: #7A7A7A;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% 0%, #F6E9F4 0%, #FBF7FB 45%, #FFFFFF 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 20px;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Scattered decorative paw prints, echoing the site's divider motif */
+  .paw {
+    position: fixed;
+    color: var(--purple);
+    opacity: 0.07;
+    font-size: 46px;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .paw-1 { top: 6%;  left: 8%;  transform: rotate(-18deg); font-size: 60px; }
+  .paw-2 { top: 16%; right: 10%; transform: rotate(22deg); }
+  .paw-3 { bottom: 12%; left: 6%; transform: rotate(12deg); font-size: 70px; }
+  .paw-4 { bottom: 22%; right: 7%; transform: rotate(-15deg); font-size: 50px; }
+  .paw-5 { top: 45%; left: 3%; transform: rotate(-8deg); font-size: 38px; }
+
+  .card {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background: var(--white);
+    box-shadow: 0 12px 30px rgba(169, 74, 158, 0.22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    margin-bottom: 22px;
+  }
+
+  .avatar img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 8px;
+    max-width: 300px;
+    line-height: 1.5;
+  }
+
+  .location-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--purple-dark);
+    background: rgba(169, 74, 158, 0.08);
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 34px;
+  }
+
+  .links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .link-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: 18px 22px;
+    border-radius: 18px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+    background: var(--purple);
+    box-shadow: 0 8px 20px rgba(169, 74, 158, 0.28);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .link-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(169, 74, 158, 0.36);
+  }
+
+  .link-btn:active { transform: translateY(-1px); }
+
+  .link-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    flex-shrink: 0;
+  }
+
+  .link-label {
+    flex: 1;
+    text-align: left;
+  }
+
+  .link-sub {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.85;
+    margin-top: 2px;
+  }
+
+  .link-arrow {
+    font-size: 14px;
+    opacity: 0.75;
+    transition: transform 0.2s ease;
+  }
+
+  .link-btn:hover .link-arrow { transform: translateX(3px); }
+
+  .link-btn.whatsapp { background: var(--whatsapp); box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3); }
+  .link-btn.whatsapp:hover { box-shadow: 0 14px 28px rgba(37, 211, 102, 0.4); }
+
+  .link-btn.site { background: var(--purple-darker); box-shadow: 0 8px 20px rgba(43, 19, 48, 0.3); }
+  .link-btn.site:hover { box-shadow: 0 14px 28px rgba(43, 19, 48, 0.38); }
+
+  .link-btn.address { background: var(--white); color: #2c2c2c; border: 2px solid rgba(169, 74, 158, 0.25); box-shadow: 0 6px 16px rgba(0,0,0,0.06); }
+  .link-btn.address .link-icon { background: rgba(169, 74, 158, 0.1); color: var(--purple); }
+  .link-btn.address:hover { box-shadow: 0 12px 24px rgba(0,0,0,0.1); border-color: var(--purple); }
+
+  .socials {
+    display: flex;
+    gap: 14px;
+    margin-top: 34px;
+  }
+
+  .socials a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #2c2c2c;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .socials a:hover { background: var(--purple); transform: translateY(-2px); }
+
+  footer {
+    margin-top: 40px;
+    font-size: 11px;
+    color: #b9b0b8;
+  }
+
+  footer a { color: #b9b0b8; }
+
+  @media (min-width: 480px) {
+    .avatar { width: 148px; height: 148px; }
+    h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<i class="fa-solid fa-paw paw paw-1"></i>
+<i class="fa-solid fa-paw paw paw-2"></i>
+<i class="fa-solid fa-paw paw paw-3"></i>
+<i class="fa-solid fa-paw paw paw-4"></i>
+<i class="fa-solid fa-paw paw paw-5"></i>
+
+<div class="card">
+  <div class="avatar">
+    <img src="images/logo_2024-1.jpg" alt="Vetplace SBC Clinica Veterinária , Hospital Veterinário , Pet Shop, Veterinária em São Bernardo" onerror="this.style.display='none'">
+  </div>
+
+  <h1>Vetplace Clínica Veterinária</h1>
+  <p class="subtitle">Odontologia, cirurgia, clínica médica e anestesia inalatória para o seu melhor amigo.</p>
+  <span class="location-tag"><i class="fa-solid fa-location-dot"></i> São Bernardo do Campo - SP</span>
+
+  <div class="links">
+    <a href="https://api.whatsapp.com/send?phone=5511940483791&text=Oi%2C%20venho%20do%20instagram%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank" class="link-btn whatsapp">
+      <span class="link-icon"><i class="fa-brands fa-whatsapp"></i></span>
+      <span class="link-label">WhatsApp<span class="link-sub">Fale agora com a nossa equipe</span></span>
+      <i class="fa-solid fa-chevron-right link-arrow"></i>
+    </a>
+
+    <a href="index.html" class="link-btn site">
+      <span class="link-icon"><i class="fa-solid fa-globe"></i></span>
+      <span class="link-label">Site<span class="link-sub">Conheça nossos serviços</span></span>
+      <i class="fa-solid fa-chevron-right link-arrow"></i>
+    </a>
+
+    <a href="https://www.google.com/maps/dir//Rua+Mateos+Demarchi,+230+-+Jardim+das+Quatro+Marias,+S%C3%A3o+Bernardo+do+Campo+-+SP,+09820-270/@-23.73959,-46.5578206,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94ce41080eb44f3d:0x7736d1ba7f7f657d!2m2!1d-46.5556319!2d-23.7395949" target="_blank" class="link-btn address">
+      <span class="link-icon"><i class="fa-solid fa-map-pin"></i></span>
+      <span class="link-label">Endereço<span class="link-sub">Rua Mateos Demarchi, 230</span></span>
+      <i class="fa-solid fa-chevron-right link-arrow"></i>
+    </a>
+  </div>
+
+  <div class="socials">
+    <a href="https://www.facebook.com/vetplacesbc" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/vetplacesbc" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+
+  <footer>© 2026 Vetplace &middot; Desenvolvido por Sing Web Design</footer>
+</div>
+
+</body>
+</html>
